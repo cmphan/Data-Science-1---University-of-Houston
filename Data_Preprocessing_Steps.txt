@@ -1,0 +1,43 @@
+Data Preprocessing Steps and Detailed Explanation: 
+1. Variable Identification
+	-Identify Predictor (input) variables and Target (output) variables
+	-Identify variable data type (like int, char,.. ) and category (categorical/continuous)
+2. Univariate Analysis:
+	-This step depends of the types of variables:
+		-Categorical Variable: create frequency table to see the category distribution
+		-Continuous Variables: care about attributes such as center tendency, dispersion, visualization methods: history, box plot
+3. Bivariate Analysis:
+	-Combination of Categorical & Continuous Variables. 
+	-Scatter-plot is usually used but it can only shows the relationship between attributes but does not indicate how strong the relationship is
+	-Can use Chi-square Test to clarity the relationship. The higher value of Chi-square, the stronger the relationship
+4. Missing data treatments: 
+	-Missing data can lead to reduction in the power/ fit of the model => a biased model => wrong prediction & estimation
+	-Missing data is common. Some factors are data extraction and data collection
+	**********************************
+	METHODS OF HANDLING MISSING VALUES
+	**********************************
+	4.a. Deletion: Deleting data leads to reduce the sample size which affects the model. 
+	4.b. Mean/Mode/Median Imputation: Replace the missing value with either mean/mode/media 
+	4.c. Prediction Model: We can split data into training set which does not include the missing data attributes and we target the missing data variable. 
+		+Disadvantages: Model is more well-behaved than the true values. If there is no relationship between the attributes containing missing data with other attributes used in training set, the model will not be precise to predict the true values
+	4.d KNN Imputation: Imputation based on similarity. The similarity of two attributes are determined using a distance function
+		+Advantage: Attributes with multiple missing values can easily treated
+		+Disadvantage: KNN algorithm is very time-consuming in analyzing large database. Choice of k-value is very critical. 
+5. Outliners Detection and Treatment 
+	-Outliner: an observation that is far or diverse from the overall pattern of sample data => increase error variance and reduces the power of statistical tests. 
+	-Detection: 
+		-Boxplot, Histogram, Scatter Plot
+		-IQR range: calculate 1.5*IQR
+		-Outliners Removal: Deleting observation: Delete outlier values if it is small
+
+		-Transforming and binning values (Natural log, decision tree..)
+		-Imputing: impute outliners use mean/mode/median
+		-Treat separately: If there are significant number of outliers, we should treat them separately in the statistical model. 
+6. Variable transformation:
+	- replace of a variable by a function (square/cube or log) when we want to change the scale or standardize the values of a variable for better understanding => transform complex non-linear relationships into linear relationships. 
+	- Data Transformation: Normalization min-max normalization, z-score normalization, normalization by decimal scaling 
+7. Variable creation: generate a new variable based on existing variable. 
+	-Create a derived variables: creates month, year, date from mm/dd/yy
+	-Create dummy variables: Encode categorical variable into numerical variables
+	
+					
