@@ -1,0 +1,21 @@
+1. What is Linear Regression?
+ 	-Relationship between one dependent variable and explanatory variable(s)
+	-Use equation to set up a relationship 
+	-Use mainly for ESTIMATION and PREDICTION
+2. What steps are involved in Linear Regression Model? 
+	-Hypothesize Deterministic Component (Estimate Unknown Parameters)
+	-Specify Probability Distribution of Random Error Term (Estimate Standard Deviation Error)
+	-Estimate the FITTED Model 
+	-Use Model for PREDICTION and ESTIMATION
+3. What are types of Regression Models ? 
+
+					    Regression Models 
+					     /           \
+					Simple	           Multiple
+					 / \	           /      \
+			  
+			  	    Linear   Non-Linear  Linear  Non-Linear
+	 -Simple : only 1 explanatory variable
+	-Multiple: 2+ explanatory variable 
+4. What is "best fit" ?
+	-Best fit mean difference between actual y values & predicted y values are a minimum. 
