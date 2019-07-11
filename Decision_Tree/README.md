@@ -16,3 +16,14 @@ Link for a walkthrough of calculating Entropy gain
 https://www.youtube.com/watch?v=eLlYSpVjH94&t=2s
 
 ```
+To draw a tree in Jupyter Notebook 
+
+```
+$ pip install graphviz
+
+```
+Documentation on how to draw a decision tree: 
+```
+https://pypi.org/project/graphviz/
+
+```
